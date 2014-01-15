@@ -3,6 +3,7 @@ layout: post
 title:  "Checking Out Jekyll!"
 date:   2014-01-13 20:41:50
 categories: jekyll testing
+permalink: /testing
 ---
 
 # New blog post!
