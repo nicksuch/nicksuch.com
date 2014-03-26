@@ -2,3 +2,4 @@ name: Nick's Personal Blog
 markdown: redcarpet
 pygments: true
 permalink: pretty
+custom_variable: dogs
