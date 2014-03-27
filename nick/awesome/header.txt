@@ -1,0 +1,9 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<meta name="keywords" content="Awesome Inc, startups, incubator, entrepreneurship, Lexington, technology, MobileX, 5Across, Startup Weekend, Do Something Awesome" />
+<meta name="description" content="Awesome Inc" />
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="./css/style.css" type="text/css" media="handheld" />
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans' rel='stylesheet' type='text/css'>

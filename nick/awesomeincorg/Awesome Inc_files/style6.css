@@ -1,0 +1,160 @@
+/**
+ * @package   Nebulae Template - RocketTheme
+ * @version   1.6.0 April 28, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ *
+ *Changes by Scott Wagner have been made to this file - See Comments
+ */
+
+/* Top Menu - Gets rid of the home button - Scott Wagner */
+
+.homeitem {
+display:none;
+} 
+
+/* Top Social Icons - Gets rid of the home button - Scott Wagner */
+
+#topimages {
+margin-top: 15px;
+} 
+/* Fixes the menu overflow due to I have and idea being so long. - Henry Yan*/
+
+#rt-header .menu-block
+{
+	width: 410px;
+}
+#social-buttons
+{
+	float: right;
+	padding: 0 20px 0 0;
+	height: 50px;
+}
+#color-table td, #color-table th
+{
+	padding: 10px 35px;
+	background: transparent;
+	border: 0 none;
+}
+#color-table
+{
+	margin: 0 auto;
+}
+.bad-img 
+{
+	padding: 0 100px 20px 0;
+	margin-top: -40px;
+	float: right;
+}
+.bad-div {margin: 20px 0;}
+.bad-span 
+{
+	width: 350px;
+	padding: 15px 0 0 50px;
+	display: block;
+}
+.dlsection
+{
+	float: left;
+	padding-left: 110px;
+}
+/* Backgrounds */
+.backgroundlevel-high {background: #fff url(../images/style6/backgrounds/bg-bottom-high.jpg) 50% 100% no-repeat;}
+.backgroundlevel-high #rt-page-surround {background: url(../images/style6/backgrounds/bg-high.jpg) 50% 0 no-repeat;}
+/* Changed below background color to BBB from FFF - Scott Wagner */
+.backgroundlevel-med, .backgroundlevel-low {background: #BBB;}
+.backgroundlevel-med #rt-page-surround {background: url(../images/style6/backgrounds/bg-med.jpg) 50% 0 no-repeat;}
+.backgroundlevel-low #rt-page-surround {background: url(../images/style6/gradient-bg3.png) 50% 0 repeat-x;}
+#rt-body-surround, #rt-top-surround, #rt-footer-surround {background: url(../images/style6/backgrounds/body-surround.png);}
+
+/* Text Colors */
+body, #rt-bottom, #rt-footer, #gantry-totop, #rt-login-button .buttontext, #rt-popup-button .buttontext, #rt-page-surround .inputbox {color: #ddd;}
+
+a {color: #D94348;}
+a:hover, #gantry-totop:hover, #rt-login-button .buttontext:hover, #rt-popup-button .buttontext:hover, #rt-page-surround .inputbox:focus {color: #fff;}
+.menutop li > .item, .menutop .fusion-submenu-wrapper li > .item, .controls .up3:hover, .controls .down3:hover, .module-title .title span {color: #fff;}
+.module-content ul.menu li a, .module-content ul.menu li .separator, .module-content ul.menu li .item, .box2 a, .box6 a {color: #FF4F54;text-shadow: -1px -1px 0 rgba(0,0,0,0.4);}
+.module-content ul.menu li a:hover, .module-content ul.menu li .separator:hover, .module-content ul.menu li .item:hover, .module-content ul.menu li.active > a, .module-content ul.menu li.active > .separator, .module-content ul.menu li.active > .item {color: #fff;}
+.readon span, .readon .button, .controls .up3, .controls .down3, .box2 a:hover, .box6 a:hover {color: #fff;text-shadow: -1px -1px 1px rgba(0,0,0,0.4);}
+.module-title .title, .menutop li .item, #rt-accessibility .rt-desc, .rt-date-feature span, #rt-login-button .buttontext, #rt-popup-button .buttontext {text-shadow: -1px -1px 0 rgba(0,0,0,0.4);}
+.box2, .title2 .module-title, .box6, .title6 .module-title {color: #ddd;}
+
+/* Logo */
+#rt-logo {background: url(../images/logo/style6/logo.png) 0 0 no-repeat;}
+.logo-block {background: url(../images/style6/vert-div.png) 100% 0 repeat-y;}
+
+/* Top Menu */
+.menutop li.active.root, .rt-splitmenu .menutop li.active {background: url(../images/style6/menutab-active.png) 50% 0 repeat-x;}
+.menutop li.root:hover, .menutop li.root.f-mainparent-itemfocus, .rt-splitmenu .menutop li:hover {background: url(../images/style6/menutab-hover.png) 50% 0 repeat-x;}
+.menutop .fusion-submenu-wrapper {background: url(../images/style6/menutab-hover.png) 50% 0 repeat-x;box-shadow: 0 0 5px rgba(0,0,0,0.8);}
+.menutop .fusion-submenu-wrapper ul {border-top: 1px solid rgba(255,255,255,0.2);}
+.menutop li.parent.root .item span .daddyicon, .menutop li.root .daddy.item .daddyicon, .menutop ul li > .daddy span {background-image: url(../images/style6/list-arrows.png);}
+.menutop ul li > .item:hover, .menutop li.f-menuparent-itemfocus > .item {background: #702425;}
+
+/* Utility */
+#rt-utility {background: url(../images/style6/horz-div.png) 50% 0 repeat-x;}
+
+/* Breadcrumbs */
+#rt-breadcrumbs {background: url(../images/style6/horz-div.png) 50% 0 repeat-x;}
+span.breadcrumbs a:hover, .pathway:hover {background: url(../images/style6/gradient-bg2.png);}
+span.no-link {background: url(../images/style6/gradient-bg4.png);}
+
+/* Showcase */
+#rt-showcase {background: url(../images/style6/horz-div.png) 50% 0 repeat-x;}
+
+/* Feature */
+#rt-feature {background: url(../images/style6/horz-div.png) 50% 0 repeat-x;}
+
+/* Main Body */
+#rt-main, #rt-maintop, #rt-mainbottom {background: url(../images/style6/horz-div.png) 50% 0 repeat-x;}
+
+/* Module Variations */
+.title7 .module-title {background: url(../images/style6/title-bg1.png) 0 100% no-repeat;}
+.title8 .module-title {background: url(../images/style6/title-bg2.png) 0 100% no-repeat;}
+.title9 .module-title {background: url(../images/style6/horz-div2.png) 0 100% repeat-x;}
+.box1 .rt-block, .title1 .module-title, .contentbox1 {background: #343434 url(../images/style6/gradient-bg1.png) 50% 0 repeat-x;border-top: 1px solid rgba(255,255,255,0.3);}
+.box2 .rt-block, .title2 .module-title, .contentbox2 {background: #A12223 url(../images/style6/gradient-bg2.png) 50% 0 repeat-x;border-top: 1px solid rgba(255,255,255,0.3);}
+.box3 .rt-block, .title3 .module-title, .contentbox3 {background: url(../images/style6/gradient-bg3.png) 50% -1px repeat-x;border-top: 1px solid rgba(255,255,255,0.3);}
+.box4 .rt-block, .title4 .module-title, .contentbox4 {background: url(../images/style6/gradient-bg4.png) 50% -1px repeat-x;border-top: 1px solid rgba(255,255,255,0.3);}
+.box5 .rt-block, .title5 .module-title, .contentbox5 {background: #222 -1px repeat-x;border-top: 1px solid rgba(255,255,255,0.2);}
+.box6 .rt-block, .title6 .module-title, .contentbox6 {background: #A12223 -1px repeat-x;border-top: 1px solid rgba(255,255,255,0.2);}
+
+/* Scrolling Modules */
+.controls .up2 {background-image: url(../images/style6/toptab-r.png);}
+.controls .up3 {background-image: url(../images/style6/toptab-l.png);}
+.controls .down2 {background-image: url(../images/style6/bottomtab-r.png);}
+.controls .down3 {background-image: url(../images/style6/bottomtab-l.png);}
+
+/* Side Menu */
+.module-content ul.menu li > a, .module-content ul.menu li > .separator, .module-content ul.menu li > .item {background: url(../images/style6/input-bg.png);}
+.module-content ul.menu li li a, .module-content ul.menu li li .separator, .module-content ul.menu li li .item {background-image: url(../images/style6/list-arrows.png);}
+.module-content ul.menu ul {background-image: url(../images/style6/trans-indicator.png);}
+
+/* Buttons and Inputs */
+.readon {background-image: url(../images/style6/readon-bg.png);box-shadow: 0 0 6px rgba(0,0,0,0.3);}
+.readon span, .readon .button {background-image: url(../images/style6/readon-arrows.png);border-top: 1px solid rgba(255,255,255,0.2);}
+.button1 .readon {background-image: url(../images/style6/readon-bg2.png);box-shadow: 0 0 6px rgba(0,0,0,0.3);}
+.rokradios, .rokchecks, .rokradios-active, .rokchecks-active {background-image: url(../images/style6/rokinputs.png);}
+
+/* Branding */
+#rocket {background: url(../images/style6/branding.png) 0 0 no-repeat;}
+
+/* Typography */
+.component-content .rt-article-icons .icon, .component-content .rt-article-icons ul li a, #rt-accessibility .button {background-image: url(../images/style6/article-icons.png);}
+.component-content .rt-articleinfo-text {background-image: url(../images/style6/tag-icon.png);}
+.rt-date-feature span, #rt-login-button .buttontext, #gantry-totop {background-image: url(../images/style6/utility-icons.png);}
+#rt-page-surround .inputbox {background: transparent url(../images/style6/input-bg.png);border: 1px solid rgba(255,255,255,0.1);box-shadow: inset 0 2px 12px rgba(0,0,0,0.4);}
+.box2 .inputbox, .box2 #form-login .inputbox {border: 1px solid rgba(255,255,255,0.2);}
+#rt-page-surround .inputbox:focus {border: 1px solid rgba(255,255,255,0.4);box-shadow: inset 0 2px 12px rgba(0,0,0,0.1);}
+#form-login ul li a, #com-form-login ul li a, ul.rt-more-articles li a, .rt-section-list ul li a, ul.mostread li a, ul.latestnews li a, .weblinks ul li a {background-image: url(../images/style6/list-arrows.png);}
+.component-content .rt-joomla-table tr.even td, .component-content .rt-joomla-table th {background: url(../images/style6/backgrounds/body-surround.png);}
+.component-content .rt-joomla-table tr.odd td, .pollstableborder th {background: url(../images/style6/gradient-bg4.png);}
+p.dropcap6:first-letter, p.dropcap7:first-letter {background: url(../images/style6/gradient-bg2.png);color: #fff;}
+em.highlight {background: url(../images/style6/gradient-bg2.png);color: #fff;}
+body ul.checkmark li:after, body ul.circle-checkmark li:before, body ul.square-checkmark li:before, body ul.circle-small li:after, body ul.circle li:after, body ul.circle-large li:after {border-color: #D94348;}
+body ul.triangle-small li:after, body ul.triangle li:after, body ul.triangle-large li:after {border-color: transparent transparent transparent #D94348;}
+.tip-wrap {background: url(../images/style6/backgrounds/body-surround.png);border: 1px solid rgba(255,255,255,0.2);}
+
+/* RTL */
+body.rtl ul.triangle-small li:after, body.rtl ul.triangle li:after, body.rtl ul.triangle-large li:after {border-color: transparent #D94348 transparent transparent;}

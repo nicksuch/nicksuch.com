@@ -3,3 +3,5 @@ markdown: redcarpet
 pygments: true
 permalink: pretty
 custom_variable: dogs
+gems:
+  - jekyll-redirect-from

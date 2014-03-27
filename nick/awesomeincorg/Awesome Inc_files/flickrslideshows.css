@@ -1,0 +1,40 @@
+.UPJFE-SelectionContainer {
+	width: 100%;
+	position: static;
+	display: table;
+}
+
+/* ### Shadow Styles ###  */
+.UPJFE-Photo-Shadow {
+	float: left;
+	background: url('images/shadow.gif') no-repeat bottom right;
+	margin: 7px 2px 2px 8px;
+ 	padding: 0px 0px 0px 0px;	
+}
+ 
+.UPJFE-Photo-Shadow img, .UPJFE-Photo-Shadow a img {
+	background-color: #FFFFFF;
+	border: 2px solid #a9a9a9;
+	display: block;
+	margin: -5px 5px 5px -5px;
+	padding: 4px;
+	position: relative;
+}
+
+
+/* ### Shadow Styles ###  */
+
+.UPJFE-Photo-Boxed {
+	float: left;
+	margin: 2px 2px 2px 2px;
+}
+
+.UPJFE-Photo-Boxed img {
+	border: 1px solid #a9a9a9;
+	background-color: #FFFFFF;
+	display: block;
+	padding: 4px 4px 4px 4px;
+	margin: 2px 2px 2px 2px;
+}
+
+.highslide-dimming.highslide-viewport-size{heigth:97% !important;}

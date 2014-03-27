@@ -1,0 +1,56 @@
+/**
+ * @package   Nebulae Template - RocketTheme
+ * @version   1.6.0 April 28, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ */
+ 
+/* Structure */
+body {text-rendering: optimizeSpeed;}
+h1, h2, h3, h4, h5 {text-rendering: optimizeLegibility;}
+body .menutop li.root > .image {padding-right: 24px;}
+body .menutop li.root > .item img {margin: 10px 10px 10px 0px;}
+
+/* Shadows */
+.rt-image {-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.5);}
+.menutop .fusion-submenu-wrapper {-webkit-box-shadow: 0 0 5px rgba(0,0,0,0.8);}
+#rt-page-surround .inputbox {-webkit-box-shadow: inset 0 2px 12px rgba(0,0,0,0.4);}
+#rt-page-surround .inputbox:focus {-webkit-box-shadow: inset 0 0 8px rgba(255,255,255,0.2);}
+.readon, .button2 .readon {-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);}
+.button1 .readon {-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.3);}
+.readonstyle-link .readon {-webkit-box-shadow: none;}
+.rok-content-rotator ul {-webkit-box-shadow: -2px 0 5px rgba(0,0,0,0.4);}
+.rok-content-rotator li {-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);}
+.rokstories-layout8 .image-small .wrapper.active, .progress .knob {-webkit-box-shadow: 1px 1px 4px rgba(0,0,0,0.4);}
+.rokstories-layout8 .image-small img.feature-sub {-webkit-box-shadow: inset 2px 2px 2px rgba(0,0,0,0.5);}
+
+/* Background Clip */
+.component-content .rt-articleinfo-text2 {-webkit-background-clip: padding-box;}
+
+/* Opacity and Transitions */
+a, .rok-content-rotator h2 a {-webkit-transition: color 0.2s ease-out;}
+.menutop li > .item {-webkit-transition: background 0.1s ease-out;}
+.roktabs-wrapper ul li {-webkit-transition: background 0.1s ease-out;}
+.scroll-image {-webkit-transition: opacity 0.2s linear;}
+#rt-page-surround .inputbox {-webkit-transition: -webkit-box-shadow 0.2s linear;}
+.menutop ul li > .item, .menutop li.f-menuparent-itemfocus > .item {-webkit-transition: background 0.2s linear;}
+.box5 .rt-block, .box6 .rt-block, .contentbox5, .contentbox6, .timeline .progress-wrapper, .rokstories-layout8 .wrapper, .featuretable-col, .roktwittie-m1 {opacity: 0.8;}
+#rocket, .roknewspager-li .roknewspager-h3, .roknewspager-li .roknewspager-content {opacity: 0.7;}
+.box5 .rt-block:hover, .box6 .rt-block:hover, #rocket:hover, .contentbox5:hover, .contentbox6:hover, .timeline .progress-wrapper:hover, .rokstories-layout8 .wrapper.active, .featuretable-col.ft-highlight, .roktwittie-m1:hover, .roknewspager-li.active .roknewspager-h3, .roknewspager-li .roknewspager-h3:hover, .roknewspager-li.active .roknewspager-content {opacity: 1.0;}
+.box5 .rt-block, .box6 .rt-block, .contentbox5, .contentbox6, #rocket, .timeline .progress-wrapper, .rokstories-layout8 .wrapper.active, .featuretable-col, .roktwittie-m1, .roknewspager-li .roknewspager-h3, .roknewspager-li .roknewspager-content {-webkit-transition: opacity 0.3s linear;}
+.roknewspager-toggle-active, .roknewspager-toggle {-webkit-transition: opacity 0.2s linear;}
+.module-content ul.menu li > a, .module-content ul.menu li > .separator, .module-content ul.menu li > .item {opacity: 0.8;-webkit-transition: opacity 0.2s linear;}
+.module-content ul.menu li a:hover, .module-content ul.menu li .separator:hover, .module-content ul.menu li .item:hover, .module-content ul.menu li.active > a, .module-content ul.menu li.active > .separator, .module-content ul.menu li.active > .item {opacity: 1.0;}
+.progress .knob {-webkit-transition: left 0.3s linear;}
+pre.lines, .typography-style-dark pre.lines {-webkit-transition: background-color 0.3s linear;}
+
+/* Demo Presets */
+.menu-preset img {-webkit-box-shadow: 3px 3px 6px rgba(0,0,0,0.2);}
+body .menutop .type-module ol li .fusion-module {overflow: visible;}
+.menu-preset a img {-webkit-transition: all 0.3s ease-in-out;-webkit-animation-iteration-count: 1;position:relative;z-index:3000;-webkit-transform: scale(1); cursor:pointer;}
+.menu-preset a:hover img {-webkit-transition: all 0.3s ease-in-out;-webkit-animation-iteration-count: 1;position:relative;z-index:3000;-webkit-transform: scale(1.1); cursor:pointer;}
+
+/* Additional Fixes */
+input:-webkit-autofill {background-color: transparent !important;}
+.controls .up3, .controls .down3, .roktabs-wrapper .roktabs-links ul li span {-webkit-user-select: none;}

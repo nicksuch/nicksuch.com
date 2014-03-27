@@ -1,0 +1,64 @@
+	</div>
+	<!-- end inner_container -->
+<!-- start footer_container-->
+	<div id="footer_container">
+	<!-- start footer_content-->
+		<div id="footer_content">
+			<div class="footer_column">
+				<h2>Info</h2>
+				<ul>
+					<li>About</li>
+					<li>Team Alpha</li>
+					<li>Current Tenants</li>
+					<li>Parking</li>
+					<li>Media Kit</li>
+					<li>Event Space</li>
+					<li>Rent a Desk</li>
+					<li><a href="./sitemap.php">Sitemap</a></li>
+					<li>Privacy Policy</li>
+				</ul>
+			</div>
+			<div class="footer_column">
+				<h2>Brands</h2>
+				<ul>
+					<li><a href="http://awesometouch.org" target="_blank">AwesomeTouch</a></li>
+					<li><a href="http://awesomelabs.org" target="_blank">Awesome Labs</a></li>
+					<li><a href="http://awesomegallery.wordpress.com/" target="_blank">Awesome Art Gallery</a></li>
+					<li><a href="http://nextington.com" target="_blank">Nextington</a></li>
+					<li>Rock Star Association</li>
+					<li><a href="http://entrepreneurhof.com" target="_blank">Entrepreneur Hall of Fame</a></li>
+					<li><a href="http://younges.org" target="_blank">Young Entrepreneurs of Lexington</a></li>
+					<li><a href="http://mobilexconference.com" target="_blank">MobileX Conference</a></li>
+					<li><a href="http://www.dsa.awesomeinc.org/" target="_blank">DSA</a></li>
+					<li>AwesomeCamp</li>
+					<li><a href="http://5across.org" target="_blank">5Across</a></li>
+				</ul>
+			</div>
+			<div class="footer_column">
+			<h2>Coworking</h2>
+				<ul>
+					<li><a href="http://abetteroffice.com">A Better Office</a></li>
+					<li><a href="http://apaxsoftware.com">Apax Software</a></li>
+					<li><a href="http://awesometouch.org">AwesomeTouch</a></li>
+					<li><a href="http://lexssc.com">Lexington Sports and Social Club</a></li>
+					<li><a href="http://remixeducation.com">Remix Education</a></li>
+				</ul>
+			</div>
+			<p style="color: red; clear: both;"><br/><strong>Awesome Inc</strong> 
+			<a href="http://maps.google.com/maps/place?ie=UTF8&q=awesome+inc&fb=1&gl=us&hq=awesome+inc&hnear=Lexington,+KY+40507&cid=8954829338718477855&t=h&z=14">348 E. Main St., Lexington, KY 40507</a>
+					 | <a href="tel:+1-502-209-9960">502-209-9960</a>
+					 | <a href="mailto:founders@awesomeinc.org?subject=I found your website!">founders@awesomeinc.org</a>
+					 | <a href="http://twitter.com/awesome_inc">@awesome_inc</a>
+			</p>
+		</div>
+		<!-- end footer_content -->
+	</div>
+	<!-- end footer_container -->
+</div>
+<!-- end outer_container -->
+
+
+</body>
+		  <script src="./scripts/twitter.js"></script>
+		  <script src="http://twitter.com/statuses/user_timeline/awesome_inc.json?callback=twitterCallback2&count=3"></script>
+</html>

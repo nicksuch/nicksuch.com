@@ -1,0 +1,388 @@
+/**
+ * @package   Nebulae Template - RocketTheme
+ * @version   1.6.0 April 28, 2011
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2011 RocketTheme, LLC
+ * @license   http://www.rockettheme.com/legal/license.php RocketTheme Proprietary Use License
+ *
+ *Changes by Scott Wagner have been made to this file - See Comments
+ *Changes by Ethan Smith see Fancy Button section
+ */
+
+/* Core */
+html {margin-bottom: 1px;}
+body {height: 100%;margin-bottom: 1px;font-family: Helvetica,Arial,sans-serif;}
+a {font-weight: bold;transition: color 0.2s ease-out;}
+h1.title {margin-top: 0;}
+h1, h2, .module-title h2, h3, h4, h5 {line-height: 1.1em;letter-spacing: inherit;}
+h5 {text-transform: uppercase;font-size: 100%;}
+.rt-container, #rt-sidebar-a, #rt-sidebar-b, #rt-sidebar-c {background: transparent;}
+.rt-container {position: relative;}
+.rt-block {margin: 15px 0;}
+ul {list-style-image: none;}
+ul.menu {padding-left: 0;}
+#rt-content-top, #rt-content-bottom {clear: both;overflow: visible;}
+#rt-debug {padding-top: 20px;position: relative;}
+#rt-page-surround {overflow: hidden;position: relative;min-height: 100%;}
+.module-title .title a {font-weight: normal;}
+#rt-body-surround, #rt-top-surround, #rt-footer-surround {border-radius: 8px;}
+
+/* Fonts */
+@font-face {font-family: 'SansumiRegular';src: url('../fonts/Sansation_Regular-webfont.eot');src: url('../fonts/Sansation_Regular-webfont.eot?iefix') format('eot'),url('../fonts/Sansation_Regular-webfont.woff') format('woff'),url('../fonts/Sansation_Regular-webfont.ttf') format('truetype'),url('../fonts/Sansation_Regular-webfont.svg#webfontw28k2xtN') format('svg');font-weight: normal;font-style: normal;}
+.font-family-nebulae .module-title .title, .font-family-nebulae .menutop li > .item, .font-family-nebulae .roktabs-links ul li span, .font-family-nebulae .readon, .font-family-nebulae .rt-date-feature, .font-family-nebulae #rt-accessibility .rt-desc, .font-family-nebulae .rt-date-feature span, .font-family-nebulae #rt-login-button .buttontext, .font-family-nebulae #rt-popup-button .buttontext, .font-family-nebulae #gantry-totop, .font-family-nebulae .rok-content-rotator h2, .font-family-nebulae .feature-block .feature-title, .font-family-nebulae .module-content ul.menu li a, .font-family-nebulae .module-content ul.menu li .separator, .font-family-nebulae .module-content ul.menu li .item, .font-family-nebulae .ft-row-top .featuretable-cell-data, .font-family-nebulae .controls .up3, .font-family-nebulae .controls .down3 {font-family: SansumiRegular,Helvetica,Arial,sans-serif;}
+.readonstyle-link.font-family-nebulae .readon {font-family: inherit;}
+
+/* Logo */
+#rt-logo {display: block;width: 262px;height: 100px;margin: 0;position: relative;z-index: 1000;}
+.logo-block {margin: 0;padding: 10px 5px 0 5px;}
+.rt-grid-12 .logo-block {background: none;}
+.centered #rt-logo {margin: 0 auto;}
+
+/* Top */
+#rt-top-surround {margin: 20px 0 -20px 0;}
+
+/* Header */
+#rt-header {position: relative;}
+
+/* Top Menu */
+/* Changed float below from right to left - Scott Wagner */
+.rt-menubar {display: inline-block;float: right;position: relative;margin: 40px 0 0 0;}
+.menu-block {padding: 0;margin: 0;}
+
+/* Showcase */
+#rt-showcase {position: relative;padding-top: 2px;}
+
+/* Feature */
+#rt-feature {position: relative;padding-top: 2px;}
+
+/* Utility */
+#rt-utility {position: relative;padding-top: 2px;}
+
+/* Main Body */
+#rt-body-surround {margin-top: 40px;}
+#rt-main {padding-top: 2px;}
+#rt-maintop, #rt-mainbottom {position: relative;}
+#rt-maintop {padding: 2px 0 0 0;}
+#rt-mainbottom {padding: 2px 0 0 0;}
+#rt-content-top, #rt-content-bottom {position: relative;}
+.scroller-enabled #rt-content-top, .scroller-enabled #rt-content-bottom {padding: 35px 0;margin: 25px 0;}
+
+/* Bottom */
+#rt-bottom {position: relative;}
+
+/* Footer */
+#rt-footer-surround {margin: 20px 0;}
+#rt-footer {position: relative;}
+
+/* Modules */
+.rt-block {position: relative;}
+.module-title {margin-bottom: 20px;}
+.module-title .title {margin: 0;padding: 0;font-size: 180%;letter-spacing: normal;font-weight: normal;}
+.module-title .title span {font-weight: normal;}
+
+/* Module Variations */
+.box1 .rt-block, .box2 .rt-block, .box3 .rt-block, .box4 .rt-block, .box5 .rt-block, .box6 .rt-block, .title1 .module-title, .title2 .module-title, .title3 .module-title, .title4 .module-title, .title5 .module-title, .title6 .module-title {border-radius: 8px;}
+.box5 .rt-block, .box6 .rt-block {opacity: 0.8;transition: opacity 0.3s linear;}
+.box5 .rt-block:hover, .box6 .rt-block:hover {opacity: 1.0;}
+.title1 .module-title, .title2 .module-title, .title3 .module-title, .title4 .module-title, .title5 .module-title, .title6 .module-title {margin: -15px -15px 5px -15px;padding: 15px 15px 15px 15px;} 
+.title7 .module-title, .title8 .module-title, .title9 .module-title {margin-bottom: 10px;padding-bottom: 10px;}
+
+/* Module Standard Variations */
+.standardcase .module-title .title {text-transform: inherit;}
+.lowercase .module-title .title {text-transform: lowercase;}
+.uppercase .module-title .title {text-transform: uppercase;}
+.flush .rt-block {padding: 0;}
+.flushtop .rt-block {padding-top: 0;}
+.flushbottom .rt-block {padding-bottom: 0;}
+#rt-popup, #rt-popuplogin {display: none;}
+
+/* Scrolling Modules */
+.controls .up, .controls .down {width: 190px;height: 31px;display: block;position: absolute;cursor: pointer;background-repeat: no-repeat;border-radius: 5px;z-index: 100;left: 50%;margin-left: -95px;}
+.controls .up2, .controls .down2 {display: block;height: 31px;margin-left: 50px;background-position: 100% 0;background-repeat: no-repeat;}
+.controls .up3, .controls .down3 {display: block;height: 31px;margin-left: -50px;background-position: 0 0;background-repeat: no-repeat;line-height: 31px;font-size: 18px;text-align: center;padding-right: 25px;user-select: none;}
+.controls .down3 {line-height: 33px;}
+.controls .up2:hover, .controls .down2:hover {background-position: 100% -45px;}
+.controls .up3:hover, .controls .down3:hover {background-position: 0 -45px;}
+.controls .up2:active, .controls .down2:active {background-position: 100% -90px;}
+.controls .up3:active, .controls .down3:active {background-position: 0 -90px;}
+.controls .up {top: 0;}
+.controls .up:active {top: 1px;}
+.controls .down {bottom: 0;}
+.controls .down:active {bottom: -1px;}
+.scroller-enabled .rt-block-scroller, .scroller-enabled .rt-block-scroller .rt-block {margin: 0;padding: 0;}
+.scroller-enabled .rt-block-scroller .rt-module-surround {padding: 15px;}
+.scroller-padding {padding: 15px 0;}
+
+/* Side Menus */
+.module-content .rt-menubar {display: block;margin: 0;float: none;position: relative;height: auto;background: none;border: 0;}
+.module-content ul.menu {margin-left: 0;}
+.module-content ul.menu li {list-style: none;padding: 0;margin: 0 -10px 2px -10px;border-radius: 6px;}
+.rt-block .module-content ul.menu li li {background: none;padding: 0;}
+.module-content ul.menu li > a, .module-content ul.menu li > .separator, .module-content ul.menu li > .item {padding: 0;display: block;border-radius: 6px;opacity: 0.8;transition: opacity 0.2s linear;}
+.module-content ul.menu li a:hover, .module-content ul.menu li .separator:hover, .module-content ul.menu li .item:hover, .module-content ul.menu li.active > a, .module-content ul.menu li.active > .separator, .module-content ul.menu li.active > .item {opacity: 1.0;}
+.module-content ul.menu li a span, .module-content ul.menu li .separator, .module-content ul.menu li .item span {padding: 8px;font-size: 16px;line-height: 18px;display: block;text-transform: uppercase;font-weight: normal;}
+.module-content ul.menu li li a, .module-content ul.menu li li .separator, .module-content ul.menu li li .item  {background-position: 0 -136px;background-repeat: no-repeat;}
+.module-content ul.menu li li a span, .module-content ul.menu li li .separator, .module-content ul.menu li li .item span {font-size: 13px;padding: 4px 10px 4px 15px;}
+.module-content ul.menu li .separator {display: block;}
+.module-content ul.menu ul {padding: 20px 0 10px 25px;margin: 0;background-position: 25px 0;background-repeat: no-repeat;}
+.module-content ul.menu ul ul {background: none;}
+.module-content ul.menu .subtext em {line-height: 12px;padding-left: 0;}
+.module-content ul.menu em {display: block;font-size: 80%;font-style: normal;font-weight: normal;}
+.module-content ul.menu .image img {float: left;}
+.module-content ul.menu .item.image {background: none;padding-left: 8px;}
+
+/* Buttons and Inputs */
+.readon {display: inline-block;margin: 0;padding: 0;background-color: transparent;overflow: visible;border-radius: 6px;background-position: 50% 0;background-repeat: repeat-x;}
+.readon span, .readon .button {display: block;margin: 0;padding: 9px 40px 8px 10px;cursor: pointer;line-height: 16px;font-size: 14px;overflow: visible;font-weight: normal;position: relative;white-space: normal;text-transform: uppercase;background-color: transparent;border-radius: 6px;background-position: 100% 4px;background-repeat: no-repeat;border-left: none;border-right: none;border-bottom: none;}
+.readon .button {padding: 8px 40px 10px 10px;line-height: 14px;}
+.readonstyle-noarrow .readon span, .readonstyle-noarrow .readon .button {padding: 9px 10px;background: none;}
+.readonstyle-small .readon span, .readonstyle-small .readon .button {padding: 5px 8px;background: none;font-size: 12px;line-height: 12px;}
+button.readon {border: 0 !important;}
+.readon span span {display: inline;background: none;margin-left: 0;padding: 0;float: none;}
+.readon:hover {background-position: 50% -106px;}
+.readon:active {background-position: 50% -212px;margin-top: 1px;margin-bottom: -1px;}
+.readonstyle-link .readon {background: none !important;border: none !important;padding: 0 !important;margin: 0 !important;height: auto !important;}
+.readonstyle-link .readon .button, .readonstyle-link .readon span {background: none !important;border: none !important;font-size: 12px !important;outline: none !important;padding: 0 !important;margin: 0 !important;line-height: 130% !important;font-weight: bold !important;text-transform: uppercase;height: auto !important;}
+.rokchecks, .rokradios {padding: 2px 0 2px 20px;line-height: 130%;cursor: pointer;}
+.rokradios {background-position: 0 2px;background-repeat: no-repeat;}
+.rokradios-active {background-position: 0 -134px;background-repeat: no-repeat;}
+.rokchecks {background-position: 0 -282px;background-repeat: no-repeat;}
+.rokchecks-active {background-position: 0 -430px;background-repeat: no-repeat;}
+
+/* Typography */
+.inputbox, #form-login .inputbox, #com-form-login .inputbox, #josForm .inputbox, .component-content .search_result .inputbox, .component-content .contact .inputbox, .component-content .user input#email, .component-content .user input#name, .component-content .user input#username, .component-content .user input#password, .component-content .user input#passwd, .component-content .user input#password2 {position: relative;z-index: 100;border-radius: 6px;}
+.box2 .inputbox, .box2 #form-login .inputbox {background-image: none;}
+.component-content .title {font-size: 220%;}
+#rt-page-surround .inputbox {transition: box-shadow 0.2s linear;}
+
+/* Branding */
+#rocket {display: block;width: 129px;height: 18px;vertical-align: middle;margin: 0 auto;opacity: 0.7;transition: opacity 0.3s linear;}
+#rocket:hover {opacity: 1.0;}
+
+/* Copyright */
+.copytext {padding: 10px 0;display: block;text-align: center;}
+
+/* Breadcrumbs */
+#rt-breadcrumbs {padding: 2px 0;}
+#breadcrumbs h3, .leading_separator {display: none;}
+.rt-breadcrumb-surround {position: relative;overflow: hidden;padding: 5px 13px;height: auto;}
+span.breadcrumbs, #rt-breadcrumbs .breadcrumbs {display: inline-block;font-size: 120%;overflow: hidden;}
+span.breadcrumbs img, #rt-breadcrumbs img[src $="arrow.png"] {display: none;}
+span.breadcrumbs a, span.no-link, .pathway {padding: 6px 10px;margin: 0 2px;float: left;display: block;line-height: 100%;border-radius: 8px;}
+
+/* Date Feature */
+.datefeature-block {margin: 0;}
+.rt-date-feature span {font-size: 130%;line-height: 130%;padding: 2px 0 2px 25px;background-position: 0 -199px;background-repeat: no-repeat;}
+
+/* Fontsizer Feature */
+.fontsizer-block {margin: 0;}
+#rt-accessibility .rt-desc {font-size: 130%;}
+#rt-accessibility .button {width: 16px;height: 16px;background-repeat: no-repeat;}
+#rt-accessibility .small .button {background-position: -104px 0;}
+#rt-accessibility .large .button {background-position: -126px 0;}
+#rt-accessibility .small:hover .button {background-position: -104px -23px;}
+#rt-accessibility .large:hover .button {background-position: -126px -23px;}
+#rt-accessibility .small:active .button {background-position: -104px -46px;}
+#rt-accessibility .large:active .button {background-position: -126px -46px;}
+
+/* Popup/Login Module Feature */
+.loginbutton-block, .popupbutton-block {margin: 0;}
+#rt-login-button .buttontext, #rt-popup-button .buttontext {font-size: 130%;line-height: 130%;font-weight: normal;}
+#rt-login-button .buttontext {padding: 2px 0 2px 20px;background-position: 0 -140px;background-repeat: no-repeat;}
+#rt-popup .module-content, #rt-popuplogin .module-content {margin: 0;}
+#rt-popup .rt-block, #rt-popuplogin .rt-block {margin: 0;padding: 0;}
+#rt-popup .title, #rt-popuplogin .title {padding: 0;margin-bottom: 15px;margin-top: 0;}
+#rt-popuplogin p {float: left;margin-bottom: 10px;}
+#rt-popuplogin p:first-child {margin-right: 10px;}
+#rt-popuplogin .readon {float: right;}
+#rt-popuplogin ul li {float: none;display: inline-block;margin-right: 10px;}
+
+/* ToTop Feature */
+#gantry-totop {padding: 2px 0 2px 25px;font-size: 130%;line-height: 130%;font-weight: normal;background-position: 0 -285px;background-repeat: no-repeat;}
+
+/* Custom Content */
+img.feature-img {width: 212px;height: 150px;padding: 5px;}
+.feature-img-surround {width: 222px;height: 178px;}
+.image-block-surround {width: 160px;height: 150px;float: left;margin-right: 15px;}
+img.image-block {width: 150px;height: 122px;padding: 5px;position: relative;}
+.content-block {overflow: hidden;}
+.number-image {display: inline-block;float: left;margin-right: 15px;margin-bottom: 15px;padding: 5px;position: relative;}
+.number-image-text {display: block;text-transform: uppercase;font-weight: bold;font-size: 20px;padding-top: 10px;margin: 0 0 -8px -5px;}
+.heading1 {font-size: 160%;display: block;margin-bottom: 15px;}
+
+/* iPhone */
+body #gantry-viewswitcher {z-index: 100;right:50%;position:relative;top:inherit;right:inherit;margin: 1em auto;}
+
+
+/* Made change to make entire acordian clickable - Scott Wagner
+.roknewspager-toggle {display:block !important; width: 100% !important;}
+*/
+/* Sidebar menu size for view the space - Scott Wagner*/
+.sidebarmenusize {float: right; width: 290px;}
+
+/* Sidebar menu size for view the space - Scott Wagner*/
+.contentbottomasize {width: 590px;}
+
+/* CSS for Tenant Profiles - Scott Wagner */
+.boxgrid{ 
+				margin: 3px; 
+				width: 180px; 
+				height: 135px; 
+				float:left; 
+				background:#161613; 
+				border: solid 5px #D24247; 
+				overflow: hidden; 
+				position: relative; 
+			}
+				.boxgrid img{ 
+					position: absolute; 
+					top: 0; 
+					left: 0; 
+					border: 0; 
+				}
+				.boxgrid p{ 
+					 
+					text-align: center; 
+					 
+					padding-left: 2px; 
+					padding-bottom: 2px; 
+					padding-right: 2px; 
+					padding-top: 2px; 
+					color:#afafaf; 
+					font-weight:bold; 
+				}	
+				.boxgrid h4{ 
+					margin-right: 2px; 
+					margin-left: 2px;
+					margin-top: 1px; 
+					margin-bottom: 1px;
+					text-align: center; 
+					color: white;  
+				}
+				
+				.boxgridlink{
+									
+					bottom: 0px;
+									
+					text-align: center;
+				}
+				
+				
+				
+			.boxcaption{ 
+				float: left; 
+				position: absolute; 
+				background: #000; 
+				height: 100px; 
+				width: 100%; 
+				opacity: .8; 
+				/* For IE 5-7 */
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+				/* For IE 8 */
+				-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ 			}
+ 				.captionfull .boxcaption {
+ 					top: 135;
+ 					left: 0;
+ 				}
+ 				.caption .boxcaption {
+ 					top: 220;
+ 					left: 0;
+ 				}
+ 				
+/* CSS for Team Alpha Profiles - Scott Wagner */
+.boxgridta{ 
+				margin: 3px; 
+				width: 250px; 
+				height: 250px; 
+				float:left; 
+				background:#161613; 
+				border: solid 5px #D24247; 
+				overflow: hidden; 
+				position: relative; 
+			}
+				.boxgridta img{ 
+					position: absolute; 
+					top: 0; 
+					left: 0; 
+					border: 0; 
+				}
+				.boxgridta p{ 
+					 
+					text-align: left; 
+					 
+					padding-left: 2px; 
+					padding-bottom: 2px; 
+					padding-right: 2px; 
+					padding-top: 2px; 
+					color:#afafaf; 
+					font-weight:bold; 
+				}	
+				.boxgridta h3{ 
+					margin-right: 2px; 
+					margin-left: 2px;
+					margin-top: 10px; 
+					margin-bottom: 1px;
+					text-align: center; 
+					color: white;  
+				}
+				
+				.boxgridtalink{
+									
+					bottom: 0px;
+									
+					text-align: center;
+				}
+				
+				
+				
+			.boxcaption{ 
+				float: left; 
+				position: absolute; 
+				background: #000; 
+				height: 100px; 
+				width: 100%; 
+				opacity: .8; 
+				/* For IE 5-7 */
+				filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+				/* For IE 8 */
+				-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+ 			}
+ 				.captionfull .boxcaption {
+ 					top: 135;
+ 					left: 0;
+ 				}
+ 				.caption .boxcaption {
+ 					top: 220;
+ 					left: 0;
+ 				}
+ 				
+/* Fancy Button */
+
+.fancy_button{
+    vertical-align:baseline;
+}
+.fancy_button a{
+    background:url("http://awesomeinc.org/templates/rt_nebulae_j16/images/style6/readon-bg.png");
+    border-radius:28px;
+    color:#FFF;
+    width:225px;
+    height:35px;
+    font-weight:normal;
+    text-decoration:none;
+    text-align:center;
+    vertical-align:baseline;
+    display:block;
+    border:1px #6C2124 solid;
+    margin:24px auto 10px auto;
+    padding:0px;
+    text-shadow: -1px -1px -1px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 0px 5px 5px #ccc;
+}
+.fancy_button a span{
+    font-family: SansumiRegular,Helvetica,Arial,sans-serif;
+    display:block;
+    margin:7px 0px 0px 0px;
+    padding:0px;
+    font-size:110%;
+}

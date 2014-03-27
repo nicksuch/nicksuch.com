@@ -1,0 +1,303 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+<title>Welcome to Awesome Inc</title>
+<style type="text/css">
+* {
+margin: 0px;
+padding: 0px;
+font-family: arial, sans-serif;
+list-style-type: none;
+}
+body {
+background: #aaa;
+}
+#header {
+width: 1912px;
+height: 100px;
+padding: 3px;
+background: #111;
+color: #999;
+}
+#header h1 {
+position: relative;
+float: left;
+}
+#header img {
+position: relative;
+float: left;
+margin: auto 100px;
+background: transparent;
+}
+#main {
+}
+.column_wrapper {
+width: 600px;
+height: 950px;
+position: relative;
+float: left;
+margin: 5px 0px 0px 25px;
+padding: 3px;
+background: #222;
+}
+.content_header {
+width: 520px;
+height: 50px;
+margin: 20px auto;
+padding: 3px;
+background: #333;
+opacity: 0.9;
+color: #999;
+}
+.content_box {
+width: 520px;
+height: 400px;
+margin: 20px auto;
+padding: 3px;
+background: #333;
+opacity: 0.9;
+color: #999;
+}
+.content_box table {
+width: 510px;
+}
+.content_box table td, th {
+margin: 1px;
+padding: 1px;
+text-align: center;
+}
+img.company_logo {
+width:60px;
+}
+img.face {
+width:30px;
+height:30px;
+}
+#inside iframe {
+width: 510px;
+height: 400px;
+}
+#awesome p {
+font-size: 13px;
+margin: 7px 0px;
+}
+#awesome ul {
+font-size: 13px;
+padding-left: 25px;
+}
+#blanket {
+   background-color:#111;
+   opacity: 0.75;
+   position:absolute;
+   z-index: 9001; /*ooveeerrrr nine thoussaaaannnd*/
+   top:0px;
+   left:0px;
+   width:100%;
+}
+.popUpDiv {
+	position:absolute;
+	background-color:#eeeeee;
+	width:300px;
+	height:300px;
+	z-index: 9002; /*ooveeerrrr nine thoussaaaannnd*/
+}
+a, a:visited, a:active {
+color: #999;
+text-decoration: underline;
+}
+
+</style>
+<script type="text/javascript" src="./csspopup.js"></script>
+<script language="javascript">AC_FL_RunContent = 0;</script>
+<script src="AC_RunActiveContent.js" language="javascript"></script>
+
+<!-- Java slideshow settings -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="fadeslideshow.js">
+
+/***********************************************
+* Ultimate Fade In Slideshow v2.0- (c) Dynamic Drive DHTML code library (www.dynamicdrive.com)
+* This notice MUST stay intact for legal use
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for this script and 100s more
+***********************************************/
+//settings: http://www.dynamicdrive.com/dynamicindex14/fadeinslideshow.htm
+
+</script>
+
+<script type="text/javascript">
+
+var mygallery=new fadeSlideShow({
+	wrapperid: "fadeshow1", //ID of blank DIV on page to house Slideshow
+	dimensions: [720, 540], //width/height of gallery in pixels. Should reflect dimensions of largest image
+	imagearray: [
+		<?php 
+		$psnid = $_GET ['psnid'];
+		$filename = "photos/$psnid/settings.xml";
+		$file = file_get_contents( $filename );
+		echo "$file"; 
+		?>
+		["media/black512x384.jpg"] //<--no trailing comma after very last image element!
+	],
+	displaymode: {type:'auto', pause:4000, cycles:0, wraparound:false, randomize:true},
+	persist: false, //remember last viewed slide and recall within same session?
+	fadeduration: 1000, //transition duration (milliseconds)
+	descreveal: "none",
+	togglerid: ""
+})		
+</script>
+<!-- Java slideshow settings -->
+
+</head>
+<body>
+
+<!-- blanket -->
+	<div id="blanket" style="display:none;"></div>
+<!-- blanket -->
+<!-- popups -->
+	<div class="popUpDiv" id="NickSuch" style="display:none;">
+		<p><a href="./awesomeincapp.html#" onclick="popup(&#39;NickSuch&#39;)">Click Me To Close</a></p>
+		<br />
+		<img src="./images/tenants/logos/awesometouch.jpg" alt="AwesomeTouch logo" class="company_logo" />
+		<br />
+		<img src="./images/tenants/people/nick_such.jpg" alt="Pic of Nick" class="face" />
+		<ul>
+			<li>Name: Nick Such</li>
+			<li>Company: AwesomeTouch</li>
+			<li>Title: CEO</li>
+			<li>E-mail: nick@awesometouch.org</li>
+			<li>Phone: (859) 472-4219</li>
+		</ul>
+	</div>	
+	<div class="popUpDiv" id="nextington" style="display:none;">
+		<p><a href="./awesomeincapp.html#" onclick="popup(&#39;nextington&#39;)">Click Me To Close</a></p>
+		<br />
+		<img src="./images/initiatives/nextington.png" alt="Nextington logo" class="company_logo" />
+		<ul>
+			<li>Name: Nextington</li>
+			<li>Description: People &amp; projects that represent “What’s next in Lex”</li>
+			<li>E-mail: founders@awesomeinc.org</li>
+		</ul>
+	</div>
+<!-- popups -->
+
+<!-- header -->
+<div id="header">
+	<div id="welcome">
+	<h1> Welcome to Awesome Inc!
+	</h1>
+	<!--<img src="./images/awesome_inc.png" /> -->
+	</div>
+	<div id="weather">
+	<img src="weather.png" />
+	</div>
+	<div id="date">
+	<img src="date.png" />
+	</div>
+	<div id="time">
+	<img src="time.png" />
+	</div>
+</div>
+<!-- header -->
+<!-- main -->
+<div id="main">
+
+<!-- left -->
+			<div id="left_column" class="column_wrapper">
+				<div id="people" class="content_header">
+				<h2>People
+				</h2>
+				</div>
+				<div id="tenants" class="content_box">
+					<table>
+						<tr>
+							<th>Logo</th><th>Pic</th><th>Name</th><th>Here?</th>
+						</tr>
+						<tr>
+							<td><img src="./images/tenants/logos/a_better_office.png" alt="A Better Office logo" class="company_logo" /></td><td><img src="./images/tenants/people/mike_sullivan.jpg" alt="Pic of Mike" class="face" /></td><td>Mike Sullivan</td><td>Here?</td>
+						</tr>
+						<tr>
+							<td><img src="./images/tenants/logos/apax_software.jpg" alt="Apax Software logo" class="company_logo" /></td><td><img src="./images/tenants/people/brian_raney.jpg" alt="Pic of Brian" class="face" /></td><td>Brian Raney</td><td>Here?</td>
+						</tr>
+						<tr>
+							<td><img src="./images/tenants/logos/apax_software.jpg" alt="Apax Software logo" class="company_logo" /></td><td><img src="./images/tenants/people/keith_kurzendoerfer.jpg" alt="Pic of Keith" class="face" /></td><td>Keith Kurzendoerfer</td><td>Here?</td>
+						</tr>		
+						<tr>
+							<td><img src="./images/tenants/logos/apax_software.jpg" alt="Apax Software logo" class="company_logo" /></td><td><img src="./images/tenants/people/justin_raney.jpg" alt="Pic of Justin" class="face" /></td><td>Justin Raney</td><td>Here?</td>
+						</tr>							
+						<tr>
+							<td><img src="./images/tenants/logos/awesometouch.jpg" alt="AwesomeTouch logo" class="company_logo" /></td><td><img src="./images/tenants/people/nick_such.jpg" alt="Pic of Nick" class="face" /></td><td><a href="./awesomeincapp.html#" onclick="popup(&#39;NickSuch&#39;)">Nick Such</a></td><td>Here?</td>
+						</tr>						
+					</table>
+				</div>
+				<div id="team_alpha" class="content_box">
+					<table>
+						<tr>
+							<th>Projects</th><th>Pic</th><th>Name</th><th>Here?</th>
+						</tr>
+						<tr>
+							<td>Space Mgt</td><td><img src="./images/team_alpha/people/therese_henrickson.jpg" alt="Pic of Therese" class="face" /></td><td>Therese Henrickson</td><td>Here?</td>
+						</tr>
+						<tr>
+							<td>Social Media and Community</td><td><img src="./images/team_alpha/people/david_mcgee.jpg" alt="Pic of Dave" class="face" /></td><td>David McGee</td><td>Here?</td>
+						</tr>
+						<tr>
+							<td>Awesome Blog</td><td><img src="./images/team_alpha/people/katharine_sagan.jpg" alt="Pic of Party" class="face" /></td><td>Katharine Sagan aka Party</td><td>Here?</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+<!-- left -->
+<!-- center -->
+		<div id="center_column" class="column_wrapper">
+				<div id="space" class="content_header">
+				<h2>Space
+				</h2>
+				</div>
+				
+				<div id="inside" class="content_box">
+					<!-- <div id="fadeshow1" class="center"></div> -->
+					<iframe src="http://www.wunderground.com/cgi-bin/findweather/getForecast?brand=wxmap&query=38.0421334,-84.492569"></iframe>
+				</div> 
+				<div id="outside" class="content_box">
+					<iframe width="510" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;t=h&amp;ecpose=38.04081129,-84.49079621,430.83,-44.12,48.077,0&amp;msa=0&amp;msid=210450710788607613635.000478ba713245b668b31&amp;ll=38.041809,-84.492025&amp;spn=0.00169,0.00273&amp;z=18&amp;output=embed"></iframe>
+				</div>
+		</div>
+<!-- center -->
+<!-- right -->
+		<div id="right_column" class="column_wrapper">
+				<div id="about" class="content_header">
+				<h2>About
+				</h2>
+				</div>
+				<div id="awesome" class="content_box">
+				<h3>About Awesome Inc
+				</h3>
+				<p>Founded in 2009, Awesome Inc is an epicenter for the communities of technology, creativity, and startups.</p>
+				<p>By day, Awesome Inc serves as a co-working space for creative and technical professionals. We currently have 15 early-stage companies who utilize this shared office space.</p>
+				<p>By night, the space is transformed into a dance studio, art gallery, event venue, and creative laboratory.</p>
+				<p>Awesome Inc is also involved in the following initiatives:
+					<ul>
+						<li><a href="./awesomeincapp.html#" onclick="popup(&#39;nextington&#39;)">Nextington</a></li>
+						<li>Rock Star Association</li>
+						<li>AwesomeTouch</li>
+						<li>Awesome Labs</li>
+						<li>Awesome Art Gallery</li>
+						<li>Awesome Inc</li>
+						<li>Entrepreneur Hall of Fame</li>
+						<li>Young Entrepreneurs of Lexington</li>
+						<li>MobileX</li>
+						<li>DSA</li>
+						<li>AwesomeCamp</li>
+						<li>5Across</li>
+					</ul>
+					</p>
+				</div>
+				<div id="events" class="content_box">
+					<iframe src="https://www.google.com/calendar/embed?title=Events%20at%20Awesome%20Inc&amp;showTitle=0&amp;showNav=0&amp;showPrint=0&amp;showTabs=0&amp;showTz=0&amp;mode=WEEK&amp;height=400&amp;wkst=1&amp;bgcolor=%23ffffff&amp;src=j79e57kuj23s5mpdj65mhnrdmg%40group.calendar.google.com&amp;color=%234A716C&amp;src=av1rspu9cnsotu0tcdncocqseg%40group.calendar.google.com&amp;color=%23B1440E&amp;src=kutcskq8ddq9e1o4afv93fbu04%40group.calendar.google.com&amp;color=%235229A3&amp;src=cncjdce95kq34nl1opt6m94ifc%40group.calendar.google.com&amp;color=%237A367A&amp;src=admin%40awesomeinc.org&amp;color=%23A32929&amp;ctz=America%2FNew_York" style=" border-width:0 " width="501" height="400" frameborder="0" scrolling="no"></iframe>
+				</div>
+		</div>
+<!-- right -->
+</div>
+<!-- main -->
+</body>
+</html>
