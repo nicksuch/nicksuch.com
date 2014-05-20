@@ -1,7 +1,9 @@
 name: Nick Such's Blog
-markdown: redcarpet
-pygments: true
+description: "Some thougths on startups, bicycles, learning to code, and living in Lexington, Kentucky"
+url: http://www.nicksuch.com
+markdown: kramdown
+highlighter: pygments
 permalink: pretty
-custom_variable: dogs
 gems:
   - jekyll-redirect-from
+  - jekyll-sitemap
