@@ -1,5 +1,4 @@
 # Nick Such
-==================
 
 This is my GitHub Pages site
 
