@@ -2,7 +2,7 @@ name: Nick Such's Blog
 description: "Some thougths on startups, bicycles, learning to code, and living in Lexington, Kentucky"
 url: http://www.nicksuch.com
 permalink: pretty
-gems:
+plugins:
   - jekyll-redirect-from
   - jekyll-sitemap
 twitter_user: nicksuch
