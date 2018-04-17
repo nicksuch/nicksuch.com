@@ -7,3 +7,6 @@ plugins:
   - jekyll-sitemap
 twitter_user: nicksuch
 github_user: nicksuch
+collections:
+  - posts
+  - courses
