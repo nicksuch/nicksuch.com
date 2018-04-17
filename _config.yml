@@ -8,5 +8,7 @@ plugins:
 twitter_user: nicksuch
 github_user: nicksuch
 collections:
-  - posts
-  - courses
+  posts:
+    output: true
+  courses:
+    output: true
