@@ -1,14 +1,9 @@
-- name: Ryan Borja
-  website: https://ryanborja.github.io
-  github: https://github.com/RyanBorja/
-  linkedin: https://www.linkedin.com/in/ryan-t-borja/
-  image: 
-  position: iReportSource
-  cohort: s18
-- name: Chris Browder
-  website: https://rcbrowder.github.io
-  github: https://github.com/rcbrowder/
-  linkedin: https://www.linkedin.com/in/rcbrowder/
-  image: 
-  position: 
-  cohort: s18
+alumni:
+  - cohort: f16
+    github: 'https://github.com/nicksuch'
+    image: /images/nick_such-5.jpg
+    linkedin: 'https://www.linkedin.com/in/nicksuch'
+    name: Nick Such
+    portfolio: 'https://www.nicksuch.com'
+    position: Awesome Inc
+    website: 'https://www.nicksuch.com'
