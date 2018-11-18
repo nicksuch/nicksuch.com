@@ -5,8 +5,8 @@ publish_mode: editorial_workflow
 media_folder: "images" # Media files will be stored in the repo under images
 
 collections:
-  - name: "blog" # Used in routes, e.g., /admin/collections/blog
-    label: "Blog" # Used in the UI
+  - label: "Blog" # Used in the UI
+    name: "blog" # Used in routes, e.g., /admin/collections/blog
     folder: "_posts" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
@@ -16,8 +16,8 @@ collections:
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - name: "courses" # Used in routes, e.g., /admin/collections/blog
-    label: "Course" # Used in the UI
+  - label: "Course" # Used in the UI
+    name: "courses" # Used in routes, e.g., /admin/collections/blog
     folder: "_courses" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}" # Filename template, e.g., title.md
@@ -26,3 +26,18 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
+  - label: "Pages"
+    name: "pages"
+    files:
+      - label: "Alumni"
+        name: "alumni"
+        file: "alumni.yml"
+        fields:
+          - {label: Name, name: name, widget: string}
+          - {label: Website, name: website, widget: string}
+          - {label: GitHub, name: github, widget: string}
+          - {label: LinkedIn, name: linkedin, widget: string}
+          - {label: Name, name: name, widget: string}
+          - {label: Image, name: image, widget: image}
+          - {label: Position, name: position, widget: string, required: false}
+          - {label: Cohort, name: cohort, widget: select, options: ["f16", "s17", "f17", "s18", "f18"]}
