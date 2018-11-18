@@ -26,12 +26,12 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
-  - label: "Pages"
-    name: "pages"
+  - label: "Data"
+    name: "data"
     files:
       - label: "Alumni"
         name: "alumni"
-        file: "alumni.yml"
+        file: "_data/alumni.yml"
         fields:
           - {label: Name, name: name, widget: string}
           - {label: Website, name: website, widget: string}
