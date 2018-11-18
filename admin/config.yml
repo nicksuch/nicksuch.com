@@ -30,9 +30,9 @@ collections:
     name: "data"
     files:
       - name: "alumni"
-        label: "Alumni"
+        label: "Alumni - YML"
         file: "_data/alumni.yml"
-        description: "Alumni list"
+        description: "Alumni list in YAML"
         fields:
           - name: alumni
             label: Alumni
@@ -43,10 +43,9 @@ collections:
               - {label: "Website", name: "website", widget: "string"}
               - {label: "GitHub", name: "github", widget: "string", hint: "https://github.com/username"}
               - {label: "LinkedIn", name: "linkedin", widget: "string", hint: "https://linkedin.com/in/..."}
-              - {label: "Portfolio", name: "portfolio", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
               - {label: "Position", name: "position", widget: "string", required: "false"}
               - {label: "Cohort", name: "cohort", widget: "select", options: ["f16", "s17", "f17", "s18", "f18"]}
+              - {label: "Image", name: "image", widget: "image"}
       - name: "alumni-json"
         label: "Alumni - JSON"
         file: "_data/alumni.json"
@@ -61,7 +60,6 @@ collections:
               - {label: "Website", name: "website", widget: "string"}
               - {label: "GitHub", name: "github", widget: "string", hint: "https://github.com/username"}
               - {label: "LinkedIn", name: "linkedin", widget: "string", hint: "https://linkedin.com/in/..."}
-              - {label: "Portfolio", name: "portfolio", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
               - {label: "Position", name: "position", widget: "string", required: "false"}
               - {label: "Cohort", name: "cohort", widget: "select", options: ["f16", "s17", "f17", "s18", "f18"]}
+              - {label: "Image", name: "image", widget: "image"}

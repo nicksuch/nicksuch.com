@@ -5,10 +5,9 @@
       "website": "https://www.nicksuch.com",
       "github": "https://github.com/nicksuch",
       "linkedin": "https://linkedin.com/in/nick",
-      "portfolio": "https://www.nicksuch.com",
-      "image": "/images/nick_such-5.jpg",
       "position": "Awesome Inc",
-      "cohort": "f18"
+      "cohort": "f18",
+      "image": "/images/nick_such-5.jpg"
     }
   ]
 }

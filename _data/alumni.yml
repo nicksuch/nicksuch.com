@@ -1,9 +1,8 @@
 alumni:
   - cohort: f16
     github: 'https://github.com/nicksuch'
-    image: /images/nick_such-5.jpg
     linkedin: 'https://www.linkedin.com/in/nicksuch'
     name: Nick Such
-    portfolio: 'https://www.nicksuch.com'
     position: Awesome Inc
     website: 'https://www.nicksuch.com'
+    image: /images/nick_such-5.jpg
