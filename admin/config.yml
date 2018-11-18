@@ -41,22 +41,27 @@ collections:
             fields:
               - {label: "Name", name: "name", widget: string, hint: "First and Last"}
               - {label: "Website", name: "website", widget: "string"}
-              - {label: "GitHub", name: "github", widget: "string"}
-              - {label: "LinkedIn", name: "linkedin", widget: "string"}
-              - {label: "Name", name: "name", widget: "string"}
+              - {label: "GitHub", name: "github", widget: "string", hint: "https://github.com/username"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string", hint: "https://linkedin.com/in/..."}
+              - {label: "Portfolio", name: "portfolio", widget: "string"}
               - {label: "Image", name: "image", widget: "image"}
               - {label: "Position", name: "position", widget: "string", required: "false"}
               - {label: "Cohort", name: "cohort", widget: "select", options: ["f16", "s17", "f17", "s18", "f18"]}
-
-      - name: "authors"
-        label: 'Authors'
-        file: '_data/authors.yml'
-        description: 'Author descriptions'
+      - name: "alumni-json"
+        label: "Alumni - JSON"
+        file: "_data/alumni.json"
+        description: "Alumni list in JSON"
         fields:
-          - name: authors
-            label: Authors
-            label_singular: 'Author'
+          - name: alumni
+            label: Alumni
+            label_singular: "Alumnus"
             widget: list
             fields:
-              - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
-              - { label: 'Description', name: 'description', widget: 'markdown' }
+              - {label: "Name", name: "name", widget: string, hint: "First and Last"}
+              - {label: "Website", name: "website", widget: "string"}
+              - {label: "GitHub", name: "github", widget: "string", hint: "https://github.com/username"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string", hint: "https://linkedin.com/in/..."}
+              - {label: "Portfolio", name: "portfolio", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Position", name: "position", widget: "string", required: "false"}
+              - {label: "Cohort", name: "cohort", widget: "select", options: ["f16", "s17", "f17", "s18", "f18"]}
