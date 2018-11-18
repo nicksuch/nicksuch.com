@@ -29,18 +29,6 @@ collections:
   - label: "Data"
     name: "data"
     files:
-      - label: "Alumni"
-        name: "alumni"
-        file: "_data/alumni.yml"
-        fields:
-          - {label: Name, name: name, widget: string}
-          - {label: Website, name: website, widget: string}
-          - {label: GitHub, name: github, widget: string}
-          - {label: LinkedIn, name: linkedin, widget: string}
-          - {label: Name, name: name, widget: string}
-          - {label: Image, name: image, widget: image}
-          - {label: Position, name: position, widget: string, required: false}
-          - {label: Cohort, name: cohort, widget: select, options: ["f16", "s17", "f17", "s18", "f18"]}
       - name: "alumni"
         label: "Alumni"
         file: "_data/alumni.yml"
@@ -51,11 +39,24 @@ collections:
             label_singular: "Alumnus"
             widget: list
             fields:
-              - {label: Name, name: name, widget: string, hint: "First and Last"}
-              - {label: Website, name: website, widget: string}
-              - {label: GitHub, name: github, widget: string}
-              - {label: LinkedIn, name: linkedin, widget: string}
-              - {label: Name, name: name, widget: string}
-              - {label: Image, name: image, widget: image}
-              - {label: Position, name: position, widget: string, required: false}
-              - {label: Cohort, name: cohort, widget: select, options: ["f16", "s17", "f17", "s18", "f18"]}
+              - {label: "Name", name: "name", widget: string, hint: "First and Last"}
+              - {label: "Website", name: "website", widget: "string"}
+              - {label: "GitHub", name: "github", widget: "string"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Position", name: "position", widget: "string", required: "false"}
+              - {label: "Cohort", name: "cohort", widget: "select", options: ["f16", "s17", "f17", "s18", "f18"]}
+
+      - name: "authors"
+        label: 'Authors'
+        file: '_data/authors.yml'
+        description: 'Author descriptions'
+        fields:
+          - name: authors
+            label: Authors
+            label_singular: 'Author'
+            widget: list
+            fields:
+              - { label: 'Name', name: 'name', widget: 'string', hint: 'First and Last' }
+              - { label: 'Description', name: 'description', widget: 'markdown' }
